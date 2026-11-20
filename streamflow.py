@@ -28,8 +28,9 @@ def plot_streamflow(dates, flows):
     plt.legend(loc="upper right", fontsize=12)
     plt.grid(True)
     plt.tight_layout()
+    plt.savefig("provo_streamflow.png", dpi=150, bbox_inches="tight")
     plt.show()
-
+    
 
 if __name__ == "__main__":
     dates, flows = load_streamflow_data(
